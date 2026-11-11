@@ -296,6 +296,10 @@ $left-gutter: 64px;
 }
 
 .mx_EventTile_body {
+    /* Trap Zalgos. This also makes the body a scroll container, so it can shrink inside
+       the (edited) annotation flex wrapper instead of growing to fit wide code blocks. */
+    overflow-y: hidden;
+
     pre {
         border: 1px solid transparent;
 
